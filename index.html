@@ -104,7 +104,6 @@ async function build(v){
     let t=clean(b),s=13;const mw=W-110-215;
     while(reg.widthOfTextAtSize(t,s)>mw&&s>7)s-=.5;
     pg.drawText(t,{x:215,y,size:s,font:reg,color:k});
-    pg.drawLine({start:{x:213,y:y-4},end:{x:W-110,y:y-4},thickness:.4,color:k});
     y-=42;
   }
   return doc.save();
